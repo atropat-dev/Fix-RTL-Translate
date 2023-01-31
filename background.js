@@ -1,19 +1,18 @@
 function fixTranslate() {
-  let allElement = document.body.getElementsByTagName("*")
-  let array = []
-  for (let i = 0; i <= allElement.length - 1; i++) {
-    if (!array.includes(allElement[i].tagName)) {
-      array[i] = allElement[i].tagName
-
-      const listTag = document.getElementsByTagName(allElement[i].tagName)
-
-      for (let key = 0; key <= listTag.length - 1; key++) {
-        if (listTag[key].tagName != "SCRIPT") {
-          listTag[key].setAttribute("dir", "auto")
-        }
-      }
-    }
+  var tags = document.querySelectorAll("*")
+  for (var i = 0; i < tags.length; i++) {
+    tags.item(i).dir = "auto"
   }
+
+  var link = document.createElement("link")
+  link.href = "https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css"
+  link.rel = "stylesheet"
+  link.type = "text/css"
+  document.head.appendChild(link)
+
+  var style = document.createElement("style")
+  style.innerHTML = "*{font-family:'Vazirmatn' !important;}"
+  document.head.appendChild(style)
 }
 
 chrome.action.onClicked.addListener((tab) => {
