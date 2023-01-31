@@ -1,0 +1,29 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "fixRTL128.png",
+         "16": "fixRTL16.png",
+         "48": "fixRTL48.png"
+      },
+      "default_title": "Press Ctrl+Shift+F to fix translate"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "commands": {
+      "_execute_action": {
+         "suggested_key": {
+            "default": "Ctrl+Shift+F",
+            "mac": "MacCtrl+Shift+F"
+         }
+      }
+   },
+   "description": "fix RTL translate From https://bidar.app",
+   "homepage_url": "https://bidar.app/project/",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuaJTlDFRDSqv6sn9FyIsnYktXt0GUkZPOqNk+R9yvzvzIm1Drekf83nXRHHXsCfFFt7thNFW4bstWDrKqVqwnP4JHLqh9Tmqp4+942RPBEA9INPEkChnI6gZgYJWoY8WMlp5YUtAr+MGxQClMKaORslinzbbtg9xdQ1jgfnlv3VAuozdB1ZGhQObNwXceRbKDFLSo0oq+uA0nZ+HNI+OnhKXYxn06aHPnYf8WOO7dOT4CNVdhdaXtnCx8O9owF/0Lmcy/+TRT3QA5GwSbcXDWSLagekguEG3N6wLINeuHuoGL7PzGLE7Z3/Lnc7idurJYCfkVrbl4g6D1wVozSJP7wIDAQAB",
+   "manifest_version": 3,
+   "name": "fix RTL translate",
+   "permissions": [ "activeTab", "scripting" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0"
+}
