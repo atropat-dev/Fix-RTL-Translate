@@ -1,4 +1,4 @@
-# fix RTL translate From https://bidar.app
+# fix RTL translate From [Bidar](https://bidar.app)
 
 If you use Google Chrome Translator to translate the entire site, texts from right-to-left languages such as Persian and Arabic are incorrect because they are still left-to-right, only translated.
 This plugin solves the problem.
